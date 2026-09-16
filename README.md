@@ -1,1 +1,868 @@
 # mobile-service-repairing-and-accessories-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Mobile Service and Repairing and Accessories - Mobile Repairing, Mobile Accessories and Mobile Services in Ashoknagar, Satpur, Nashik.">
+
+  <meta name="keywords"
+    content="Mobile Service, Mobile Repairing, Mobile Accessories, Ashoknagar, Satpur, Nashik">
+
+  <meta name="theme-color" content="#111111">
+
+  <title>Mobile Service and Repairing and Accessories | Nashik</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      background: #080808;
+      color: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 1px solid #292929;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .logo-area img {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid #ffd000;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd000;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
+        url("images/shop-front.jpg");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+    .hero-logo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 28px;
+      border: 3px solid #ffd000;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 15px;
+      border: 1px solid #665400;
+      border-radius: 30px;
+      color: #ffd000;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    h1 {
+      color: #ffd000;
+      font-size: clamp(34px, 7vw, 68px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #ddd;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 13px 21px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn-yellow {
+      background: #ffd000;
+      color: #111;
+    }
+
+    .btn-dark {
+      background: #171717;
+      border: 1px solid #555;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      color: #ffd000;
+      font-size: 35px;
+      margin-bottom: 6px;
+    }
+
+    .section-title p {
+      color: #999;
+    }
+
+    /* SERVICE CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 18px;
+      padding: 28px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ffd000;
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .card p {
+      color: #aaa;
+    }
+
+    /* BRANDS */
+
+    .brands {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      background: #161616;
+      border: 1px solid #333;
+      padding: 13px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid #333;
+      transition: .3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+      border-color: #ffd000;
+    }
+
+    /* ABOUT */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid #333;
+    }
+
+    .info-box {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .info-box h2 {
+      color: #ffd000;
+      margin-bottom: 18px;
+    }
+
+    .info-box p {
+      color: #ddd;
+      margin: 14px 0;
+    }
+
+    .info-box strong {
+      color: #ffd000;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #101010;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact-card {
+      text-align: center;
+      background: #171717;
+      border: 1px solid #292929;
+      padding: 28px;
+      border-radius: 18px;
+      transition: .3s;
+    }
+
+    .contact-card:hover {
+      border-color: #ffd000;
+      transform: translateY(-4px);
+    }
+
+    .contact-card .icon {
+      font-size: 35px;
+    }
+
+    .contact-card h3 {
+      color: #ffd000;
+      margin-bottom: 5px;
+    }
+
+    .contact-card p {
+      color: #bbb;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      color: #888;
+      border-top: 1px solid #252525;
+      font-size: 14px;
+    }
+
+    /* WHATSAPP FLOAT */
+
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+
+      padding: 14px 19px;
+      border-radius: 50px;
+
+      background: #25d366;
+      color: white;
+
+      font-weight: bold;
+      box-shadow: 0 8px 30px rgba(0,0,0,.5);
+    }
+
+    /* MOBILE */
+
+    @media(max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 280px;
+      }
+
+      .about-image {
+        height: 330px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#home" class="logo-area">
+
+      <img
+        src="images/logo.jpg"
+        alt="Mobile Service and Repairing and Accessories Logo">
+
+      <span>
+        Mobile Service<br>
+        Repairing & Accessories
+      </span>
+
+    </a>
+
+
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#brands">Brands</a>
+
+      <a href="#gallery">Photos</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="container hero-content">
+
+    <img
+      class="hero-logo"
+      src="images/logo.jpg"
+      alt="Mobile Service and Repairing and Accessories Logo">
+
+    <div class="tag">
+      MOBILE SERVICE • REPAIRING • ACCESSORIES
+    </div>
+
+    <h1>
+      Mobile Service and<br>
+      Repairing and Accessories
+    </h1>
+
+    <p>
+      Mobile repairing, mobile accessories and mobile services
+      at Ashoknagar, Satpur, Nashik.
+    </p>
+
+
+    <div class="buttons">
+
+      <a
+        class="btn btn-yellow"
+        href="tel:9588628618">
+        📞 Call Now
+      </a>
+
+
+      <a
+        class="btn btn-dark"
+        href="https://wa.me/919588628618"
+        target="_blank">
+        💬 WhatsApp
+      </a>
+
+
+      <a
+        class="btn btn-dark"
+        href="https://www.google.com/maps/search/?api=1&query=Shop%20No%205%2C%20Chawda%20Complex%2C%20near%20Ambika%20Sweets%2C%20Ashoknagar%2C%20Satpur%2C%20Nashik"
+        target="_blank">
+        📍 Get Directions
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Our Services</h2>
+
+      <p>
+        Complete mobile service and accessory solutions
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <div class="card">
+
+        <div class="icon">🔧</div>
+
+        <h3>
+          Mobile Repairing
+        </h3>
+
+        <p>
+          Mobile repairing and servicing for different
+          types of mobile phones.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">📱</div>
+
+        <h3>
+          Mobile Service
+        </h3>
+
+        <p>
+          Mobile related service and support for your
+          everyday smartphone needs.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🎧</div>
+
+        <h3>
+          Mobile Accessories
+        </h3>
+
+        <p>
+          Earphones, neckbands, chargers, cables,
+          covers and other mobile accessories.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BRANDS -->
+
+<section id="brands">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Mobile Brands</h2>
+
+      <p>
+        Popular brands available at the shop
+      </p>
+
+    </div>
+
+
+    <div class="brands">
+
+      <div class="brand">OPPO</div>
+
+      <div class="brand">VIVO</div>
+
+      <div class="brand">XIAOMI</div>
+
+      <div class="brand">REALME</div>
+
+      <div class="brand">SAMSUNG</div>
+
+      <div class="brand">iPhone</div>
+
+      <div class="brand">ONEPLUS</div>
+
+      <div class="brand">MOTOROLA</div>
+
+      <div class="brand">NOKIA</div>
+
+      <div class="brand">HONOR</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Our Shop</h2>
+
+      <p>
+        Real photos of our shop
+      </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+      <img
+        src="images/shop-front.jpg"
+        alt="Mobile Service and Repairing and Accessories Shop Front">
+
+
+      <img
+        src="images/shop-interior-1.jpg"
+        alt="Mobile Accessories Shop Interior">
+
+
+      <img
+        src="images/shop-interior-2.jpg"
+        alt="Mobile Shop Interior">
+
+
+      <img
+        src="images/business-card.jpg"
+        alt="Mobile Service and Repairing and Accessories Business Card">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section>
+
+  <div class="container about">
+
+
+    <img
+      class="about-image"
+      src="images/shop-front.jpg"
+      alt="Mobile Service and Repairing and Accessories Shop">
+
+
+    <div class="info-box">
+
+      <h2>
+        About Our Shop
+      </h2>
+
+
+      <p>
+        <strong>Mobile Service and Repairing and Accessories</strong>
+        provides mobile repairing, service and mobile accessories
+        in Ashoknagar, Satpur, Nashik.
+      </p>
+
+
+      <p>
+        📍
+        <strong>Address:</strong><br>
+        Shop No. 05, Chawda Complex,
+        Near Ambika Sweets,
+        Ashoknagar, Satpur,
+        Nashik.
+      </p>
+
+
+      <p>
+        👤
+        <strong>Proprietor:</strong>
+        Kunal Sonawane
+      </p>
+
+
+      <p>
+        📞
+        <strong>Phone:</strong>
+        9588628618
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Contact Us</h2>
+
+      <p>
+        Visit our shop or contact us
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <!-- CALL -->
+
+      <a
+        class="contact-card"
+        href="tel:9588628618">
+
+        <div class="icon">
+          📞
+        </div>
+
+        <h3>
+          Call
+        </h3>
+
+        <p>
+          9588628618
+        </p>
+
+      </a>
+
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="contact-card"
+        href="https://wa.me/919588628618"
+        target="_blank">
+
+        <div class="icon">
+          💬
+        </div>
+
+        <h3>
+          WhatsApp
+        </h3>
+
+        <p>
+          Chat with us
+        </p>
+
+      </a>
+
+
+      <!-- MAP -->
+
+      <a
+        class="contact-card"
+        href="https://www.google.com/maps/search/?api=1&query=Shop%20No%205%2C%20Chawda%20Complex%2C%20near%20Ambika%20Sweets%2C%20Ashoknagar%2C%20Satpur%2C%20Nashik"
+        target="_blank">
+
+        <div class="icon">
+          📍
+        </div>
+
+        <h3>
+          Location
+        </h3>
+
+        <p>
+          Open in Google Maps
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  © 2026 Mobile Service and Repairing and Accessories
+
+  <br>
+
+  Ashoknagar • Satpur • Nashik
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/919588628618"
+  target="_blank">
+
+  💬 WhatsApp
+
+</a>
+
+
+</body>
+</html>
